@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Tabla de Libros</h1>
+        <div>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Género</th>
+                        <th>Precio</th>
+                        <th>Disponibilidad</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody> <!-- Se agregan los datos a la tabla dinámicamente -->
+            </table>
+            
+        </div>
+
+        <form action="">
+            
+            <label for="nombre-libro">Ingrese el nombre del libro:</label>
+            <input type="text" name="nombre-libro" id="nombre-libro" required>
+            <br>
+
+            <label for="genero">Seleccione el género del libro:</label>
+            <select name="genero" id="genero">
+                <option value="" selected>Seleccione un género</option>
+                <option value="Clásico">Clásico</option>
+                <option value="Romance">Romance</option>
+                <option value="Fantasía">Fantasía</option>
+                <option value="Misterio">Misterio</option>
+                <option value="Terror">Terror</option>
+            </select>
+            <br>
+
+            <label for="precio">Indique el precio del libro:</label>
+            <input type="number" name="precio" id="precio" required>
+            <br>
+
+            <label for="disponibilidad">Seleccione la disponibilidad del libro:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="disponibilidad" value="opt1-dis"> Disponible
+                </label>
+                <label>
+                    <input type="radio" name="disponibilidad" value="opt2-dis"> No disponible
+                </label>
+            </div>
+            <br> 
+
+            <label for="descripcion-libro">Añada una breve descripción del libro:</label>
+            <textarea name="descripcion-libro" id="descripcion-libro" maxlength="100" placeholder="Descripción de máximo 50 caracteres" required></textarea>
+            <br> 
+
+            <button type="submit">Enviar</button>
+         
+        </form>
+    </section>
+
+    <script src="tabla-js.js"></script>
+</body>
+</html>

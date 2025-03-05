@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="main"> <!-- Contenedor principal -->
+        <header class="header"> <!-- Lado derecho-->
+            <h2>Menú de navegación</h2>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tabla.html">Tabla</a></li>
+                    <li><a href="formulario.html"><span class="active">Formulario</span></a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section"> <!-- Contenido principal -->
+            <h1>Formulario</h1>
+            <div class="line-purple"></div>
+            
+            <section class="section-content">
+                <p>Este es un ejemplo de un formulario</p>
+                <br>
+
+                <form action="" class="form">
+                    <fieldset>
+                        <legend>Deja tus datos personales: </legend>
+                        <br>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name">
+
+                        <label for="secondName">Apellido:</label>
+                        <input type="text" name="secondName" id="secondName">
+
+                        <label for="age">Edad:</label>
+                        <input type="number" name="age" id="age">
+
+                        <label for="options">Selecciona tu país de origen:</label>
+                        <select name="options" id="options"> 
+                            <option value="" selected>Selecciona un país</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Paraguay">Paraguay</option>
+                        </select> 
+                        <br>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Información de contacto:</legend>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="tel-number">Teléfono:</label>
+                        <input type="tel" name="tel-number" id="tel-number">
+
+                        <label for="comment">Deja tu comentario:</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </fieldset>
+
+                    <br>
+                    <button type="submit" class="btn">Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>2025 &copy; Todos los derechos reservados | Monserrat Palacios</p>
+    </footer>
+    
+</body>
+</html>

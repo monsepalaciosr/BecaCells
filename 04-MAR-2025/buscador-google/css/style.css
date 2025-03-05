@@ -1,0 +1,179 @@
+@import "normalize.css";
+
+:root {
+    --lightGray: #eeeeee;
+    --btnGray: #f8f9fa;
+    --gray: #bebebe;
+    --dark: #1e1e1e;
+    --blue: #4285F4;
+    --red: #EA4335;
+    --yellow: #FBBC05;
+    --green: #34A853;
+    --logoFont: "Poppins", sans-serif;
+    --bodyFont: "Roboto", sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box; /* El width y height incluyan padding y border, no suma espacios */
+}
+
+body {
+    font-size: 62.5%;
+    font-family: var(--bodyFont);
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 0.8rem;
+}
+
+a:hover {
+    border-bottom: 0.05rem solid var(--dark);
+}
+
+button {
+    background-color: var(--btnGray);
+    font-size: 0.8rem;
+    border: 0.1rem solid var(--btnGray);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 0.05rem solid var(--gray);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Utilities */
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.line-gray {
+    border-bottom: 0.05rem solid var(--gray);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+/* header */
+.header-nav {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+.header-nav ul{
+    display: flex;
+    justify-self: end;
+    gap: 1.5rem;
+}
+/* main */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.main label {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.main input {
+    display: block;
+    width: 50%;
+    border-radius: 1.3rem;
+    border: 0.1rem solid var(--lightGray);
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+    outline: none;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.main input:hover {
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-btn {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* footer */
+.footer-sect1 {
+    background-color: var(--lightGray);
+    padding: 1rem 0;
+}
+
+.footer-sect1 p {
+    margin-left: 1rem;
+}
+
+.footer-sect2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--lightGray);
+    padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .footer-sect2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.sect2-a ul,
+.sect2-b ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.sect2-a {
+    justify-self: start;
+    margin-left: 1rem;
+}
+
+.sect2-b ul {
+    justify-self: end;
+    margin-right: 1rem;
+}

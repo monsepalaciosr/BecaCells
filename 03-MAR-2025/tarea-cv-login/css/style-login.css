@@ -1,0 +1,86 @@
+:root {
+    --red: #A31D1D;
+    --darkPurple: #AA60C8;
+    --purple: #D69ADE;
+    --lightPurple: #EABDE6;
+    --pink: #FFDFEF;
+    --white: #fff;
+    --black: #212121;
+    --headerFont: "Open Sans", sans-serif;
+    --bodyFont: "IBM Plex Mono", monospace;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--bodyFont);
+    font-size: 62.5%;
+}
+
+h1, h2 {
+    font-family: var(--headerFont);
+    line-height: 1.2;
+}
+
+h1 {font-size: 2rem;}
+
+h2 {font-size: 1.5rem;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--darkPurple);
+    border-radius: 0.4rem;
+    padding: 2rem;
+}
+
+form h2 {
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+label, input {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+button {
+    margin-top: 1.2rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--purple);
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: var(--pink);
+    color: var(--black);
+}
+
+.errorMensaje {
+    font-size: 0.7rem;
+    padding: 1rem;
+    background-color: var(--red);
+    border-radius: 0.3rem;
+}

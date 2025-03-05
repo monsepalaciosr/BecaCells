@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action=""> <!-- Action: a donde vamos a hacer request. Method: GET, POST, PUT-->
+
+        <label for="acept">Aceptar términos y condiciones</label>
+        <input id="acept" type="checkbox"><br>
+
+        <label for="option">Selecciona una de las dos opciones</label>
+        <input id="option1" name="option" type="radio">A <!-- Una de dos opciones se utiliza radio-->
+        <input id="option2" name="option" type="radio">B
+        <br>
+
+        <label for="options">Selecciona tu país de origen:</label>
+        <select name="options" id="options"> <!-- Para seleccionar una opción, cuando existen más de 2 opciones -->
+            <option value="" selected>Selecciona un país</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Paraguay">Paraguay</option>
+        </select> 
+        <br>
+        <textarea name="" id=""></textarea>
+        <br>
+
+        <!-- <input type="button" name="" id="" value="Click me"> -->
+        <button>Click Me</button>
+        <!-- campos de entrada, el usuario nos provee informacion sobre estos tipos de campos-->
+    
+        <fieldset> <!-- Agrupa elementos en un formulario -->
+            <legend>Información personal</legend> <!-- descripción del fieldset -->
+            <label for="contrasena">Contraseña</label> 
+            <input id="contrasena" name="contrasena" type="password" placeholder="contrasena" > <br>
+            <br>
+
+            <label for="nombre">Nombre</label> <!-- Le da nombre a los inputs -->
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre completo" required> <br><!-- Para relacionar un campo con un label, hay que compartir el mismo nombre (name)-->
+            <!-- Utilizamos el id para identificar un nodo-->
+
+            <label for="address">Direccion</label>
+            <input type="text" name="address" id="address">
+        </fieldset>
+    </form>
+</body>
+</html>

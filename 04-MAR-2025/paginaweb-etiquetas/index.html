@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main class="main"> <!-- Contenedor principal -->
+        <header class="header"> <!-- Lado derecho-->
+            <h2>Menú de navegación</h2>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html"><span class="active">Inicio</span></a></li>
+                    <li><a href="tabla.html">Tabla</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section"> <!-- Contenido principal -->
+            <h1>¡Bienvenido a mi página!</h1>
+            <div class="line-purple"></div>
+            
+            <section class="section-grid">
+                <div>
+                    <figure>
+                        <img src="multimedia/annie-spratt-4wz1YsANFB0-unsplash.jpg" alt="">
+                        <caption>Esta es una imagen de unas flores</caption>
+                    </figure>
+                </div>
+
+                <div>
+                    <h3>Ejemplo de un details</h3>
+                    <details> 
+                        <summary>Detalles adicionales</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                    </details>
+
+                    <h3>Ejemplo de un modal</h3>
+                    <button class="btn" id="btn-modal"> Abre el modal</button>
+                    <dialog id="myDialog"> 
+                        <p>Esto se debe ocultar al darle click al boton</p>
+                        <button class="btn" id="btn-cerrarModal">Cerrar</button>
+                    </dialog>
+
+                    <h3>Ejemplo de un template</h3>
+                    <button class="btn" id="btn-mostrarTemp">Mostrar el template</button>
+                    <template id="myTemplate">
+                        <p>Esto es un template</p>
+                        <button class="btn" id="btn-ocultarTemp">Ocultar</button>
+                    </template>
+                    <div id="contenedor-template"></div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>2025 &copy; Todos los derechos reservados | Monserrat Palacios</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>

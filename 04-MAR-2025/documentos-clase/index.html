@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <figure>
+        <img src="..." alt="...">
+        <figcaption>Imagen representativa de una figura humana</figcaption>
+    </figure>
+
+    <label for="nivel">Nivel de habilidad:</label>
+    <meter id="nivel" value="0.7" min="0" max="1"></meter> <!-- Barra de progreso -->
+    <br>
+    <br>
+
+    <label for="colors">Search a topics</label>
+    <input type="text" list="colores" name="colors" id="colors"><!-- list: hace referencia a la lista de opciones donde vamos a poder buscar lo que el usuario escriba -->
+    <datalist id="colores">
+        <option value="rojo"></option>
+        <option value="azul"></option>
+        <option value="verde"></option>
+        <option value="cafe"></option>
+        <option value="amarillo"></option>
+    </datalist>
+    <br>
+    <br>
+
+    <template id="template"> <!-- Es una plantilla. Se utiliza para copiar contenido HTML donde lo necesitamos. Es invisible, sirve para clonar el contenido. documento fragment: una porción del documento -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ducimus. Velit totam voluptatibus quae ipsum, quos optio eius delectus assumenda facilis sed impedit quidem commodi, temporibus maxime error, necessitatibus corporis!</p>
+    </template> <!-- Es un objeto. Todos los objetos son referencias -->
+    <br>
+    <br>
+    <br>
+
+    <label for="predectiveInput">SEARCH</label>
+    <input id="predectiveInput" type="text">
+    <!-- <script> // Atributo async y defer
+        const template = document.getElementById('template'); // Obtiene una referencia, de la etiqueta
+        const clone = template.content.cloneNode(true);
+        document.body.appendChild(clone);
+        //Se le agrega al documento en el body
+        //Nulo. Esta vacío el valor
+    </script> -->
+
+    <!-- <script>
+        const input = document.querySelector('#predictiveInput');
+        let texto = '';
+        const listToSearch = ['rojo', 'azul', 'verde'];
+        let listaFiltrada = [];
+        input.addEventListener('input', ({data}) => {
+            texto += data;
+            listaFiltrada = listToSearch.filter((element) => { //filter: funcion para filtrar los elementos dento de un arreglo
+            return element === texto || element.includes(texto); //Debe pintar la lista de opciones disponibles
+            }); 
+
+            if(listaFiltrada.length > 0) {
+                const ul = document.createElement('ol');
+                listaFiltrada.forEach((option) =>{
+                const li = document.createElement('li');
+                li.innerText = option;
+                ul.appendChild(li);
+                document.body.appendChild(ul);
+            });
+            }
+            
+        });
+
+    </script> -->
+
+    <script>
+        const input = document.querySelector('#predictiveInput');
+        let texto = '';
+        const listToSearch = ['rojo', 'azul', 'verde'];
+        let listaFiltrada = [];
+        input.addEventListener('input', ({data}) => {
+            texto += data;
+            listaFiltrada = listToSearch.filter((element) => {
+                return element === texto || element.includes(texto);
+            });
+            if(listaFiltrada.length > 0) {
+                const ul = document.createElement('ol');
+                listaFiltrada.forEach((option) => {
+                    const li = document.createElement('li');
+                    li.innerText = option;
+                    ul.appendChild(li);
+                    document.body.appendChild(ul);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
