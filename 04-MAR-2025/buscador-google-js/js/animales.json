@@ -1,0 +1,24 @@
+{
+    "animales": [
+        {
+            "nombre" : "perro",
+            "url" : "https://www.google.com/search?q=perro&sca_esv=70cc93bfb03a553e&hl=es-419&sxsrf=AHTn8zqW2sHT2-W0kJ_iTdgRjguL2FlviQ:1741118863229&source=hp&biw=765&bih=714&ei=j13HZ_TZCq3QkPIP4fi30Q0&iflsig=ACkRmUkAAAAAZ8drn7NEn6NciPqa71wl05d53kHDe_0b&ved=0ahUKEwi03eeanfGLAxUtKEQIHWH8LdoQ4dUDCBc&uact=5&oq=perro&gs_lp=EgNpbWciBXBlcnJvMgcQIxgnGMkCMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyCBAAGIAEGLEDMgUQABiABDIIEAAYgAQYsQMyBRAAGIAESLoJUABY0wdwAHgAkAEAmAG3AaABigSqAQM0LjG4AQPIAQD4AQGKAgtnd3Mtd2l6LWltZ5gCBaACpgTCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIoFmAMAkgcDMy4yoAfuIQ&sclient=img&udm=2"
+        },
+        {
+            "nombre" : "gato",
+            "url": "https://www.google.com/search?q=gato&sca_esv=70cc93bfb03a553e&hl=es-419&biw=765&bih=714&udm=2&sxsrf=AHTn8zpbWAMo4vaPa-YyDitWjfQDfuC9aA%3A1741118865892&ei=kV3HZ9uXNq3dkPIPm6bTmA8&ved=0ahUKEwibpI2cnfGLAxWtLkQIHRvTFPMQ4dUDCBE&uact=5&oq=gato&gs_lp=EgNpbWciBGdhdG8yDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTINEAAYgAQYsQMYQxiKBUjNCVDUA1j_BnABeACQAQCYAXqgAe0CqgEDMy4xuAEDyAEA-AEBmAIFoAKOA6gCCsICChAjGCcYyQIY6gLCAgsQABiABBixAxiDAZgDCZIHAzQuMaAHixM&sclient=img"
+        },
+        {
+            "nombre" : "elefante",
+            "url": "https://www.google.com/search?q=elefante&sca_esv=70cc93bfb03a553e&hl=es-419&biw=765&bih=714&udm=2&sxsrf=AHTn8zppyYJ5y2oIeLr9QtK84yQAsaB1tA%3A1741118897325&ei=sV3HZ6LJE-qfkPIPtYeFuQ4&oq=elef&gs_lp=EgNpbWciBGVsZWYqAggAMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMg0QABiABBixAxhDGIoFMggQABiABBixAzIIEAAYgAQYsQMyEBAAGIAEGLEDGEMYgwEYigUyCBAAGIAEGLEDMggQABiABBixAzIKEAAYgAQYQxiKBTIIEAAYgAQYsQNI-RBQ8AJYkgZwAXgAkAEAmAFboAHkAqoBATS4AQHIAQD4AQGYAgWgAoMDqAIKwgIKECMYJxjJAhjqAsICBxAjGCcYyQKYAweSBwE1oAfTFg&sclient=img"
+        },
+        {
+            "nombre" : "jirafa",
+            "url": "https://www.google.com/search?q=jirafa&sca_esv=70cc93bfb03a553e&hl=es-419&biw=765&bih=714&udm=2&sxsrf=AHTn8zogHmHb8Bl7lZC2MjQqJukXSI_7Og%3A1741118923596&ei=y13HZ6CTJPbOkPIPt5-IgQ4&ved=0ahUKEwjgpM-3nfGLAxV2J0QIHbcPIuAQ4dUDCBE&uact=5&oq=jirafa&gs_lp=EgNpbWciBmppcmFmYTINEAAYgAQYsQMYQxiKBTINEAAYgAQYsQMYQxiKBTIKEAAYgAQYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIQEAAYgAQYsQMYQxiDARiKBTIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDIFEAAYgAQyChAAGIAEGEMYigVI4A1Q5gNYqQxwAXgAkAEAmAFcoAGVBKoBATa4AQPIAQD4AQGYAgegArwEqAIKwgIKECMYJxjJAhjqAsICBxAjGCcYyQLCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgINEAAYgAQYsQMYgwEYCpgDBZIHATegB-Af&sclient=img"
+        },
+        {
+            "nombre": "conejo",
+            "url": "https://www.google.com/search?q=conejo&sca_esv=70cc93bfb03a553e&hl=es-419&biw=765&bih=714&udm=2&sxsrf=AHTn8zo9drr_BbtPkB7waBVQO7GR-_1FBQ%3A1741118945131&ei=4V3HZ7jdB9qnkPIPuJbMsAI&ved=0ahUKEwj40fHBnfGLAxXaE0QIHTgLEyYQ4dUDCBE&uact=5&oq=conejo&gs_lp=EgNpbWciBmNvbmVqbzIQEAAYgAQYsQMYQxiDARiKBTIQEAAYgAQYsQMYQxiDARiKBTINEAAYgAQYsQMYQxiKBTIQEAAYgAQYsQMYQxiDARiKBTIIEAAYgAQYsQMyBRAAGIAEMgUQABiABDILEAAYgAQYsQMYgwEyCBAAGIAEGLEDMgsQABiABBixAxiDAUiXEFDkAlj8DXABeACQAQCYAW-gAcEEqgEDNC4yuAEDyAEA-AEBmAIHoALnBKgCCsICChAjGCcYyQIY6gLCAgcQIxgnGMkCwgIKEAAYgAQYQxiKBcICDhAAGIAEGLEDGIMBGIoFwgIKEAAYgAQYsQMYCpgDBZIHAzQuM6AHoSQ&sclient=img"
+        }
+    ]
+}

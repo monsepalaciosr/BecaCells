@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "Open Sans", sans-serif;
+        color: white;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .section {
+        display: flex;
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 15px;
+    }
+    .article:nth-child(1) {
+        background-color: #f7aa08;
+    }
+    .article:nth-child(2) {
+        background-color: #0392a6;
+    }
+    .article:nth-child(3) {
+        background-color: #066e54;
+    }
+    .article p {
+        margin: 0;
+    }
+    .article button {
+        margin-top: 30px;
+        width: fit-content;
+        background-color: white;
+        border: 1px solid white;
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
+    .article button:nth-child(1) {
+        color: #f7aa08;
+    }
+    .article button:nth-child(2) {
+        color: #0392a6;
+    }
+    .article button:nth-child(3) {
+        color: #066e54;
+    }
+</style>
+<body>
+    <main>
+        <section class="section">
+            <article class="article">
+                <h1>Titulo 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod suscipit pariatur, quia delectus dolore vitae fugit commodi voluptatem, quos voluptatum nihil itaque quasi autem sit vero nulla eligendi iste?</p>
+                <button>Learn more</button>
+            </article>
+            
+            <article class="article">
+                <h1>Titulo 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod suscipit pariatur, quia delectus dolore vitae fugit commodi voluptatem, quos voluptatum nihil itaque quasi autem sit vero nulla eligendi iste?</p>
+                <button>Learn more</button>
+            </article>
+
+            <article class="article">
+                <h1>Titulo 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod suscipit pariatur, quia delectus dolore vitae fugit commodi voluptatem, quos voluptatum nihil itaque quasi autem sit vero nulla eligendi iste?</p>
+                <button>Learn more</button>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

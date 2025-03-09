@@ -1,0 +1,22 @@
+html {
+    font-size: 20px;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+
+    background-color: palegoldenrod;
+    color: rgba(0,0,0,0.6);
+}
+
+article {
+    font-size: 50px;
+}
+
+p {
+    font-size: 1em; /* Calcula el tamaño con respecto al tamaño de su padre, ej: P de article, P de h1*/
+    /* Esta heredando el tamaño de su padre, en este caso el P de article vale 50px y el P de section 20px */
+    line-height: 30px;
+}

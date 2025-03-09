@@ -1,0 +1,179 @@
+:root {
+    /* primary */
+    --DesaturatedDarkCyan: #5AA4A4;
+    /* neutral */
+    --LightGrayishCyan-bg: #EFFAFA;
+    --LightGrayishCyan: #EEF6F6; /* filter tablets */
+    --DarkGrayishCyan: #7A8E8E;
+    --VeryDarkGrayishCyan: #2B3A3A;
+
+    --bodyFont: "League Spartan", sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10 px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* GLOBALS */
+body {
+    font-family: var(--bodyFont);
+    font-size: 1.5rem; /* 15 px */
+    background-color: var(--LightGrayishCyan-bg);
+}
+
+h1 {
+    color: var(--DesaturatedDarkCyan);
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: var(--LightGrayishCyan);
+    color: var(--DesaturatedDarkCyan);
+    font-weight: 500;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* UTILITIES */
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.txt-darkGrayishCyan {
+    color: var(--DarkGrayishCyan);
+}
+
+.line-darkGrayishCyan {
+    border-bottom: 0.1rem solid var(--DarkGrayishCyan);
+}
+
+/* HEADER */
+.header-img {
+    background-color: var(--DesaturatedDarkCyan);
+    background-image: url(/static-job-listings-master/images/bg-header-mobile.svg);
+    min-width: 100vw;
+    height: 15.6rem;
+}
+
+@media (min-width: 768px) {
+    .header-img {
+        background-image: url(/static-job-listings-master/images/bg-header-desktop.svg);
+    }
+}
+
+/* ITEMS CARD */
+.main {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.card-item {
+    position: relative;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 4rem;
+    padding: 3rem 2.5rem 2rem 2.5rem; /* arriba, derecha, abajo, izquierda*/
+    box-shadow: 3px 3px 20px rgba(90, 164, 164, 0.2);
+}
+
+.card-item--border {
+    border-left: 0.6rem solid var(--DesaturatedDarkCyan);
+}
+
+.card-item--img {
+    margin-top: -6rem;
+}
+
+.card-item img{
+    max-width: 20%;
+    height: auto;
+}
+
+.card-item--title {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    align-items: center;
+}
+
+.card-item p {
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.card-item--title-span {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-item--title-span span:nth-child(1),
+.card-item--title-span span:nth-child(2) {
+    padding: 0.6rem 1rem;
+    border-radius: 1.4rem;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-item--title-span span:nth-child(1) {
+    background-color: var(--DesaturatedDarkCyan);
+}
+
+.card-item--title-span span:nth-child(2) {
+    background-color: var(--VeryDarkGrayishCyan);
+}
+
+/* BUTONS */
+.card-item--filters {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 769px) {
+    .line-darkGrayishCyan {
+        display: none;
+    }
+
+    .card-item {
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .card-item img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-item--img {
+        margin-top: 0;
+    }
+
+    .card-item--filters {
+        justify-content: right;
+    }
+}
+
+.items-none {
+    display: none;
+}

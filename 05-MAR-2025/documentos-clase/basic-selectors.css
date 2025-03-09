@@ -1,0 +1,50 @@
+/* universal */
+* {
+    margin: 0;
+}
+/* id */
+#title {
+    color: blue;
+}
+/* clase */
+p.bold { /* Lo van a compartir más de un elemento */
+    font-weight: 700;
+    color: black;
+}
+/* tipo */
+p {
+    color: aqua;
+}
+
+/* pseudo clase */
+p:hover {
+    color: green;
+}
+
+/* pseudo elementos */
+p::first-letter { /* Identifica la primer letra*/
+    color: orange;
+    text-transform: uppercase;
+}
+
+/* atributo */
+[class="bold"] {
+    color: yellow;
+}
+
+/* Combinadores ' ', >, + */
+
+/* > hijos */
+article > p.bold {
+    color: red;
+}
+
+/* ' ' descendicentes */
+section p {
+    color: brown;
+}
+
+/* + hermanos */ /* Busca al primer hermano*/
+h1 + p.bold {
+    color: aquamarine;
+}

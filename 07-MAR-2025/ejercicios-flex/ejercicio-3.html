@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <style>
+        .header,
+        .footer {
+            max-width: 100vw;
+            height: 100px;
+            border-radius: 20px;
+        }
+        .header {
+            background-color: #787878;
+        }
+        .container-flex {
+            display: flex;
+            gap: 15px;
+        }
+        .container-flex-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        .aside,
+        .section {
+            width: 20vw;
+            border-radius: 15px;
+        }
+        .aside {
+            background-color: #70a3e3;
+            height: 300px;
+            margin-top: 30px;
+        }
+        .section {
+            background-color: #ff7d7d;
+            height: 130px;
+            margin-top: 20px;
+        }
+        .main {
+            background-color: #f6ba4c;
+            width: 80vw;
+            height: 450px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+        .footer {
+            background-color: #caa8ff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <div class="container-flex">
+            <div class="container-flex-items">
+                <aside class="aside"></aside>
+                <section class="section"></section>
+            </div>
+            <main class="main"></main>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+    
+</body>
+</html>
