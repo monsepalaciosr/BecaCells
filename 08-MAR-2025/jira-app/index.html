@@ -10,32 +10,462 @@
     <script src="https://kit.fontawesome.com/d474b9e562.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <section class="header-desktop">
-            <div class="header-desktop--top">
-                <i class="fa-brands fa-jira icon"></i>
-                <i class="fa-solid fa-magnifying-glass icon"></i>
-                <i class="fa-solid fa-xmark icon rotated-icon"></i>
-            </div>
-            <div class="header-desktop--bottom">
-                <img src="img/icon-1.png" alt="" class="img-header">
-                <i class="fa-solid fa-circle-question"></i>
-            </div>
-        </section>
+    <main class="container">
 
-        <section class="header-mobile">
-            <div class="header-mobile--top">
-                <i class="fa-solid fa-magnifying-glass icon"></i>
-                <i class="fa-solid fa-xmark icon rotated-icon"></i>
-            </div>
-            <div class="header-mobile--bottom">
-                <h2 class="no-margin no-padding">Projects</h2>
-                <div class="header-mobile--bottomIcon">
+        <header class="header">
+            <section class="header-mobile">
+                <div class="header-mobile--top">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <i class="fa-solid fa-plus icon"></i>
+                </div>
+                <div class="header-mobile--bottom">
+                    <h2 class="no-margin no-padding">Projects</h2>
+                    <div class="header-mobile--bottomIcon">
+                        <img src="img/icon-1.png" alt="" class="img-header">
+                    </div>
+                </div>
+            </section>
+
+            <section class="header-desktop">
+                <div class="header-desktop--top">
+                    <i class="fa-brands fa-jira icon"></i>
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                    <i class="fa-solid fa-plus icon"></i>
+                </div>
+                <div class="header-desktop--bottom">
                     <img src="img/icon-1.png" alt="" class="img-header">
                     <i class="fa-solid fa-circle-question icon"></i>
                 </div>
+            </section>
+        </header>
+
+        <!-- NAV DESKTOP -->
+        <nav class="nav-desktop">
+            <section class="nav-desktop--header">
+                <div class="nav-desktop--header-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="nav-desktop--header-content">
+                    <h2>Teams in Space</h2>
+                    <p>Software project</p>
+                </div>
+            </section>
+
+            <section class="nav-desktop--content">
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <p>Backlog</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <p class="active">Board</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Reports</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <p>Releases</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-dice-d6"></i>
+                    <p>Components</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-check-to-slot"></i>
+                    <p>Issues</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-code"></i>
+                    <p>Repository</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-folder-plus"></i>
+                    <p>Add item</p>
+                </div>
+
+                <div class="nav-desktop--content-icons">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
+                </div>
+            </section>
+        </nav>
+
+        <!-- HOME CONTAINER - MOBILE -->
+        <section class="main-containerMobile">
+            <h3>Recent projects</h3>
+            <div class="card-menuMobile">
+                <div class="card-menuMobile--icon card-menuMobile--iconGreen">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <div class="card-menuMobile--content">
+                    <p class="no-margin no-padding">Marketing</p>
+                    <span>2 boards: MMM</span>
+                </div>
+            </div>
+
+            <div class="card-menuMobile">
+                <div class="card-menuMobile--icon card-menuMobile--iconBlue">
+                    <i class="fa-solid fa-cloud"></i>
+                </div>
+                <div class="card-menuMobile--content">
+                    <p class="no-margin no-padding">Fluffy clouds</p>
+                    <span>FC board</span>
+                </div>
+            </div>
+
+            <a href="teamsInSpace.html">
+                <div class="card-menuMobile">
+                    <div class="card-menuMobile--icon card-menuMobile--iconPurple">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="card-menuMobile--content">
+                        <p class="no-margin no-padding">Teams in Space</p>
+                        <span>Software project</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="card-menuMobile">
+                <div class="card-menuMobile--icon card-menuMobile--iconYellow">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <div class="card-menuMobile--content">
+                    <p class="no-margin no-padding">Service desk</p>
+                    <span>18 queues: All open</span>
+                </div>
+            </div>
+
+            <div class="card-menuMobile">
+                <div class="card-menuMobile--icon card-menuMobile--iconBlue">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </div>
+                <div class="card-menuMobile--content">
+                    <p class="no-margin no-padding">Soft server</p>
+                    <span>SS board</span>
+                </div>
             </div>
         </section>
-    </header>
+
+        <!-- MAIN CONTAINER - DESKTOP -->
+        <section class="main-container">
+            <section class="main-container--title">
+                <h1 class="no-margin no-padding">Board</h1>
+                <button class="btn-gray">Release</button>
+                <i class="fa-solid fa-ellipsis"></i>
+            </section>
+            
+            <section class="main-container--search">
+                <div class="main-container--search-input">
+                    <input type="text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="main-container--search-list">
+                    <p>Quick Filters</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </section>
+            
+            <section class="main-container--grid">
+                <!-- LIST TO DO -->
+                <section class="main-container--grid-toDo">
+                    <h3 class="no-margin">To do</h3>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Engage Jupiter Express for outer solar system travel</p>
+                        <span class="label-yellow">Space travel patners</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-square-check icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-25</p>
+                                <img src="img/icon-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Create 90 day plans for all departments in the Mars Office</p>
+                        <span class="label-orange">Local mars office</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-circle-up icons-card"></i>
+                                <i class="fa-solid fa-ban icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>9</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-12</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Engage Saturn's Rings Resort as a preferred provider</p>
+                        <span class="label-yellow">Space travel partners</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-circle-up icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-17</p>
+                                <img src="img/icon-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Enable Speedy SpaceCraft as the preferred</p>
+                        <span class="label-aqua">Seespaceez plus</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-bookmark icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-15</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- LIST IN PROGRESS -->
+                <section class="main-container--grid-toDo">
+                    <h3 class="no-margin">In progress</h3>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Requesting available flights is now taking > 5 seconds</p>
+                        <span class="label-aqua">Seespaceez plus</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-bookmark icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p><s>TIS-8</s></p>
+                                <img src="img/icon-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Engage Saturn Shuttle Lines for group tours</p>
+                        <span class="label-yellow">Space travel partners</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-square-check icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-15</p>
+                                <img src="img/icon-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Establish a catering vendor to provide meal service</p>
+                        <span class="label-orange">Local mars office</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-wrench icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-15</p>
+                                <img src="img/icon-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Engage Saturn Shuttle Lines for group tours</p>
+                        <span class="label-yellow">Space travel partners</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-square-check icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-11</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- CODE REVIEW -->
+                <section class="main-container--grid-toDo">
+                    <h3 class="no-margin">In progress</h3>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Registrer with the Mars Ministry of Revenue</p>
+                        <span class="label-orange">Local mars office</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-bookmark icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-11</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Draft network plan for Mars Office</p>
+                        <span class="label-orange">Local mars office</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-square-check icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-15</p>
+                                <img src="img/icon-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- DONE -->
+                <section class="main-container--grid-toDo">
+                    <h3 class="no-margin">Done</h3>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Homepage footer uses an inline style-should use a class</p>
+                        <span class="label-purple">Large team support</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-circle-up icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-68</p>
+                                <img src="img/icon-7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Engage JetShuttle SpaceWays for travel</p>
+                        <span class="label-yellow">Space travel partners</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-bookmark icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-23</p>
+                                <img src="img/icon-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Engage Saturn Shuttle Lines for group tours</p>
+                        <span class="label-yellow">Space travel partners</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-square-check icons-card"></i>
+                                <i class="fa-solid fa-arrow-up-long icons-card"></i>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-68</p>
+                                <img src="img/icon-2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <p class="no-margin card-txt">Establish a catering vendor to provide meal service</p>
+                        <span class="label-orange">Local mars office</span>
+                        <div class="card-sections">
+                            <div class="card-sections--icons">
+                                <i class="fa-solid fa-square-check icons-card"></i>
+                                <i class="fa-solid fa-angles-up icons-card"></i>
+                                <div class="card-sections--icons-number">
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            <div class="card-sections--author">
+                                <p>TIS-15</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
+        </section>
+
+        <!-- NAV MOBILE -->
+        <footer class="footer-mobile">
+            <nav class="nav-mobile">
+                <div class="nav-mobile--icons">
+                    <i class="fa-solid fa-folder active"></i>
+                    <p class="active">Projects</p>
+                </div>
+                <div class="nav-mobile--icons">
+                    <i class="fa-solid fa-list-check"></i>
+                    <p>Issues</p>
+                </div>
+                <div class="nav-mobile--icons">
+                    <i class="fa-solid fa-bell"></i>
+                    <p>Notifications</p>
+                </div>
+                <div class="nav-mobile--icons">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Account</p>
+                </div>
+            </nav>
+        </footer>
+    </main>
+    
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout page</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            column-gap: 20px;
+            row-gap: 8px;
+            height: 100vh;
+            width: 1380px;
+            padding: 5px;
+            margin: 5px;
+        }
+        header,
+        nav,
+        .article-1,
+        .article-2,
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+        header {
+            background-color: plum;
+            grid-column: 1 / 3;
+            height: 100px;
+        }
+        nav {
+            background-color: aquamarine;
+            grid-column: 1 / 2;
+            grid-row: 2 / 4;
+            height: 450px;
+        }
+        .article-1 {
+            background-color: beige;
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            height: 210px;
+        }
+        .article-2 {
+            background-color: beige;
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+            height: 210px;
+        }
+        footer {
+            background-color: pink;
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>header</header>
+        <nav>nav</nav>
+        <article class="article-1">article</article>
+        <article class="article-2">article</article>
+        <footer>footer</footer>
+    </main>
+</body>
+</html>

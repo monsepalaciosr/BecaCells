@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "vite": "^6.2.2"
+  },
+  "scripts": {
+  "dev": "vite"
+  }
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LitElement Demo</title>
+  <script type="module" src="./image-carousel.js"></script>
+</head>
+<body>
+  <image-carousel></image-carousel>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const carousel = document.querySelector('image-carousel');
+      carousel.images = [
+        'https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1495584816685-4bdbf1b5057e?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        'https://images.unsplash.com/photo-1539634262233-7c0b48ab9503?q=80&w=2625&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      ];
+    });
+  </script>
+</body>
+</html>
